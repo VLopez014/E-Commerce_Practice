@@ -253,6 +253,7 @@ highlights--container {
 
 .books {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .book {
@@ -296,5 +297,9 @@ highlights--container {
  text-decoration: line-through;
  padding-right: 6px;
  color: #bfbfbf; 
+}
+
+.double__line--title {
+  font-size: 20px;
 }
 
