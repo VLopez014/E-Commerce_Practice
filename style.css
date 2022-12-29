@@ -75,12 +75,12 @@ nav {
   align-items: center;
 }
 
-.nav__logo {
+.library__logo {
   width: 100%;
   padding: 20px;
 }
 
-.nav__logo--wrapper {
+.library__logo--wrapper {
   width: 100%;
   max-width: 180px;
 }
@@ -303,3 +303,51 @@ highlights--container {
   font-size: 20px;
 }
 
+
+/* EXPLORE MORE BOOKS */
+#explore {
+  background-color: #C5212122;
+}
+
+.explore__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: #242424;
+}
+
+
+.footer__container {
+  padding: 24px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.footer__links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.footer__link {
+  color: #FFF;
+  margin: 0 24px 0 24px;
+}
+
+.library__logo--footer {
+  color: #FFF;
+}
+
+.copyright {
+  color: #FFF;
+}
