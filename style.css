@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,6 +55,10 @@ button {
 
 .text-color--red {
   color: #C52121;
+}
+
+.no-cursor {
+  cursor: not-allowed;
 }
 
 /* NAV */
@@ -340,14 +345,18 @@ footer {
 }
 
 .footer__link {
-  color: #FFF;
   margin: 0 24px 0 24px;
 }
 
 .library__logo--footer {
-  color: #FFF;
+  filter: grayscale(1) invert(1);
 }
 
+.copyright {
+  margin-bottom: 24px;
+}
+
+.footer__link,
 .copyright {
   color: #FFF;
 }
