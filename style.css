@@ -123,6 +123,7 @@ nav {
   font-size: 40px;
   text-align: center;
   border: none;
+  display: none;
 }
 
 .menu__backdrop {
@@ -137,6 +138,19 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 .menu__list {
@@ -153,6 +167,10 @@ nav {
 .menu__link {
   color: #FFF;
   font-size: 40px;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
 }
 
 .btn__menu--closed {
@@ -271,7 +289,6 @@ highlights--container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .highlight__para {
@@ -296,6 +313,7 @@ highlights--container {
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* FEATURES */
@@ -409,3 +427,44 @@ footer {
 .copyright {
   color: #FFF;
 }
+
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES  */
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .book {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .nav__link {
+    display: none;
+  }
+  .btn__menu {
+      display: block;
+  }
+  .highlight{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .highlight--wrapper {
+      flex-wrap: wrap;
+    }
+  }
