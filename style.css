@@ -423,7 +423,7 @@ footer {
     font-size: 26px;
   }
 
-  button {
+  .btn {
     font-size: 16px;
   }
 
@@ -448,5 +448,36 @@ footer {
   .highlight {
     width: 100%;
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 280px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .footer__list {
+    padding: 12px 24px;
+  }
+
+  .footer__logo--img {
+    width: 100px;
+  }
+
+  .logo {
+    width: 100px;
   }
 }
