@@ -327,7 +327,6 @@ footer {
 .footer__link {
   text-decoration: none;
   color: #FFF; 
-  border: 2px solid blue;
 }
 
 .footer__link:hover {
